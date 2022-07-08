@@ -1,0 +1,73 @@
+{
+  "products": [
+    {
+      "title": "Minister-white",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpDvUX3c81vdXxTk4mR9defkKxEpQJZeLlOA&usqp=CAU",
+      "description": "Be it a brunch or a casual outing with friends, The Souled Store Lazy AF Garfield T-shirt will always be your go-to pick. It is stitched from cotton that promises all-day comfort, so you can make heads turn while being in your element.",
+      "price": 600
+    },
+    {
+      "title": "Rayon Cotton Lining",
+      "imgUrl": "https://m.media-amazon.com/images/I/41VFscAFqOL.jpg",
+      "description": " If you order this t-shirt from any of the nine realms, we will now send it to you using Bifrost.",
+      "price": 800
+    },
+    {
+      "title": "Graphic-T-shirt",
+      "imgUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mh-3-23-shirts-1616515905.png?crop=0.502xw:1.00xh;0,0&resize=640:*",
+      "description": "For years, this masked vigilante has been saving Gotham from the clutches of the world's worst enemies that have terrorized the town!",
+      "price": 450
+    },
+    {
+      "title": "Cotton T-shirt",
+      "imgUrl": "https://image.made-in-china.com/202f0j00qiNulzEbahfc/100-Cotton-T-Shirt-Woman-Man-Clothes-Custom-Logo-Polo-T-Shirt.jpg",
+      "description": "Buy the quirky Moon Knight merchandise online in India, available exclusively at The Souled Store.",
+      "price": 700
+    },
+    {
+      "title": "Loose Fit Round-Neck",
+      "imgUrl": "https://tiimg.tistatic.com/fp/1/006/857/men-s-loose-fit-round-neck-half-sleeve-hip-hop-t-shirt-001.jpg",
+      "description": "Spider-Man started off as the friendly neighbourhood superhero, but soon became an important member of the Avengers Initiative. He has dealt with threats from far off worlds.",
+      "price": 900
+    },
+    {
+      "title": "Polo T-shirt",
+      "imgUrl": "https://image.made-in-china.com/202f0j00mYJGoCsRCfgh/The-Latest-Polo-Shirt-Men-Button-Polo-T-Shirt-for-Sports-T-Shirts.jpg",
+      "description": "If yes, then you definitely need this ultra-stylish and extraordinarily comfortable Drop Cut T-Shirt! And what better one than the one with Captain America's Shield on it which automatically makes it 10x cooler! ",
+      "price": 500
+    }
+  ],
+  "registeruser": [
+    {
+      "fullname": "VICKY VINCENT",
+      "mobile": 6446646464,
+      "email": "www@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "fullname": "david",
+      "mobile": 89753212,
+      "email": "david@gmail.com",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "fullname": "Vicky",
+      "mobile": 987654321,
+      "email": "vicky@gmail.com",
+      "password": "999",
+      "id": 3
+    },
+    {
+      "fullname": "dollar",
+      "mobile": 897432777,
+      "email": "dollar@gmail.com",
+      "password": "666",
+      "id": 4
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

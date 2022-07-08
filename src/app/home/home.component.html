@@ -1,0 +1,42 @@
+<div><img class="hero" src="assets/img/hero.jpg" alt="an hero image" /></div>
+<div class="h1"><h1>T-Menz</h1></div>
+<div class="h2">
+  Look Alive! T-Menz is an Indie T-Shirt brand selling a line of Cool T-Shirts &
+  Merch Online in India fashioned by Music, Art and All Things Pop
+  Culture.T-menz is an online shopping site for customized t-shirts.
+</div>
+<div class="container">
+  <div class="row">
+    <ng-container *ngFor="let item of filterCategory">
+      <div class="card col-md-5">
+        <img src="{{ item.imgUrl }}" alt="" />
+        <h5
+          style="
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100ch;
+          "
+        >
+          {{ item.title }}
+        </h5>
+        <p
+          style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis"
+        >
+          {{ item.description }}
+        </p>
+        <p><strong>Price:</strong> ${{ item.price }}</p>
+        <button class="btn btn-primary" (click)="addtocart(item)">
+          Add to cart
+        </button>
+      </div>
+    </ng-container>
+  </div>
+</div>
+<!-- footer -->
+<div class="footer">
+  <p>
+    Owner: Hege Refsnes<br />
+    <a href="mailto:xyzzz@example.com">David@example.com</a>
+  </p>
+</div>
