@@ -1,0 +1,44 @@
+<p
+  style="
+    margin-top: 80px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  "
+>
+  Your order placed Successfully!!
+</p>
+<ng-container *ngIf="products.length != 0">
+  <div class="container">
+    <div class="card-table">
+      <div class="cart-product">
+        <table class="table table-responsive">
+          <thead>
+            <tr>
+              <th>Sr.No</th>
+              <th>Product Name</th>
+
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of products; let i = index">
+              <td>{{ i + 1 }}</td>
+              <td>{{ item.title }}</td>
+
+              <th style="width: 12%">{{ item.price }}</th>
+              <td style="width: 12%">{{ item.quantity }}</td>
+              <td style="width: 12%">{{ item.total }}</td>
+            </tr>
+          </tbody>
+          <td>
+            <strong>Grand Total : ₹{{ grandTotal }}</strong>
+          </td>
+          <button (click)="ebill()" class="btn btn-success">Complete</button>
+        </table>
+      </div>
+    </div>
+  </div></ng-container
+>

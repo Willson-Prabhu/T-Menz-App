@@ -26,10 +26,10 @@ export class LoginComponent implements OnInit {
         return a.fullname === this.loginForm.value.fullname  && a.password === this.loginForm.value.password 
       });
       if(user){
-        alert("Your order placed Successfully! cash to be paid during delivery");
+       alert("You have login succesfully!!");
         this.loginForm.reset();
-       this.router.navigate(['home']);
-       location.reload()
+       this.router.navigate(['/bill']);
+       
       }else{
         alert("user not found");
       }

@@ -9,6 +9,9 @@ import { RegisterComponent } from './register/register.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
+import { BillComponent } from './bill/bill.component';
+import { CashondeliveryComponent } from './cashondelivery/cashondelivery.component';
+import { CustomerbillComponent } from './customerbill/customerbill.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +21,9 @@ import { HeaderComponent } from './header/header.component';
     ECommerceComponent,
     RegisterComponent,
     HeaderComponent,
+    BillComponent,
+    CashondeliveryComponent,
+    CustomerbillComponent,
     
   ],
   imports: [

@@ -1,0 +1,238 @@
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form [formGroup]="billForm" (ngSubmit)="placeorder()">
+        <div class="row">
+          <div class="col-50">
+            <h3
+              style="
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                  serif;
+              "
+            >
+              Billing Address
+            </h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input
+              formControlName="fullname"
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="John M. Doe"
+            />
+            <span
+              class="text-danger"
+              *ngIf="
+                billForm.controls['fullname'].dirty &&
+                billForm.hasError('required', 'fullname')
+              "
+              >*Full Name is required</span
+            >
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input
+              formControlName="email"
+              type="text"
+              id="email"
+              name="email"
+              placeholder="john@example.com"
+            />
+            <span
+              class="text-danger"
+              *ngIf="
+                billForm.controls['email'].dirty &&
+                billForm.hasError('required', 'email')
+              "
+              >*Email is required</span
+            >
+
+            <label for="adr"
+              ><i class="fa fa-address-card-o"></i> Address</label
+            >
+            <input
+              formControlName="address"
+              type="text"
+              id="adr"
+              name="address"
+              placeholder="542 W. 15th Street"
+            />
+            <span
+              class="text-danger"
+              *ngIf="
+                billForm.controls['address'].dirty &&
+                billForm.hasError('required', 'address')
+              "
+              >*Address is required</span
+            >
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input
+              formControlName="city"
+              type="text"
+              id="city"
+              name="city"
+              placeholder="New York"
+            />
+            <span
+              class="text-danger"
+              *ngIf="
+                billForm.controls['city'].dirty &&
+                billForm.hasError('required', 'city')
+              "
+              >*City is required</span
+            >
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input
+                  formControlName="state"
+                  type="text"
+                  id="state"
+                  name="state"
+                  placeholder="NY"
+                />
+                <span
+                  class="text-danger"
+                  *ngIf="
+                    billForm.controls['state'].dirty &&
+                    billForm.hasError('required', 'state')
+                  "
+                  >*state is required</span
+                >
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input
+                  formControlName="zip"
+                  type="text"
+                  id="zip"
+                  name="zip"
+                  placeholder="10001"
+                />
+                <span
+                  class="text-danger"
+                  *ngIf="
+                    billForm.controls['zip'].dirty &&
+                    billForm.hasError('required', 'zip')
+                  "
+                  >*Zip is required</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3 style="font-family: serif">Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color: navy">&nbsp; </i>
+              <i class="fa fa-cc-amex" style="color: blue">&nbsp; </i>
+              <i class="fa fa-cc-mastercard" style="color: red">&nbsp; </i>
+              <i class="fa fa-cc-discover" style="color: orange">&nbsp; </i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input
+              formControlName="nameoncard"
+              type="text"
+              id="cname"
+              name="cardname"
+              placeholder="John More Doe"
+            />
+            <span
+              class="text-danger"
+              *ngIf="
+                billForm.controls['nameoncard'].dirty &&
+                billForm.hasError('required', 'nameoncard')
+              "
+              >*Name on card is required</span
+            >
+            <label for="ccnum">Credit card number</label>
+            <input
+              formControlName="creditcardno"
+              type="text"
+              id="ccnum"
+              name="cardnumber"
+              placeholder="1111-2222-3333-4444"
+            />
+            <span
+              class="text-danger"
+              *ngIf="
+                billForm.controls['creditcardno'].dirty &&
+                billForm.hasError('required', 'creditcardno')
+              "
+              >*Credit card No is required</span
+            >
+            <label for="expmonth">Exp Month</label>
+            <input
+              formControlName="expmonth"
+              type="text"
+              id="expmonth"
+              name="expmonth"
+              placeholder="September"
+            />
+            <span
+              class="text-danger"
+              *ngIf="
+                billForm.controls['expmonth'].dirty &&
+                billForm.hasError('required', 'expmonth')
+              "
+              >*Exp month is required</span
+            >
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input
+                  formControlName="expyear"
+                  type="text"
+                  id="expyear"
+                  name="expyear"
+                  placeholder="2018"
+                />
+                <span
+                  class="text-danger"
+                  *ngIf="
+                    billForm.controls['expyear'].dirty &&
+                    billForm.hasError('required', 'expyear')
+                  "
+                  >*Exp year is required</span
+                >
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input
+                  formControlName="cvv"
+                  type="text"
+                  id="cvv"
+                  name="cvv"
+                  placeholder="352"
+                />
+                <span
+                  class="text-danger"
+                  *ngIf="
+                    billForm.controls['cvv'].dirty &&
+                    billForm.hasError('required', 'cvv')
+                  "
+                  >*cvv is required</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr" /> Shipping
+          address same as billing
+        </label>
+        <a style="float: right; margin-top: -40px" routerLink="/cashondelivery"
+          >Click Here to use Cash On Delivry option!!
+        </a>
+        <button
+          type="submit"
+          [disabled]="!billForm.valid"
+          class="btn btn-primary"
+        >
+          Place Order
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

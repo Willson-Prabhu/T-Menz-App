@@ -8,20 +8,23 @@ import { CartService } from '../service/cart.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  public totalItem : number = 0;
   public productList : any ;
   public filterCategory : any
   searchKey:string ="";
   constructor(private api : ApiService, private cartService : CartService) { }
 
   ngOnInit(): void {
+    this.cartService.getProducts()
+    .subscribe(res=>{
+      this.totalItem = res.length;
+    })
     this.api.getProduct()
     .subscribe(res=>{
       this.productList = res;
       this.filterCategory = res;
       this.productList.forEach((a:any) => {
-        if(a.category ==="women's clothing" || a.category ==="men's clothing"){
-          a.category ="fashion"
-        }
+        
         Object.assign(a,{quantity:1,total:a.price});
       });
       console.log(this.productList)

@@ -65,9 +65,104 @@
       "email": "dollar@gmail.com",
       "password": "666",
       "id": 4
+    },
+    {
+      "fullname": "maddy",
+      "mobile": 8778788787,
+      "email": "maddy@gmail.com",
+      "password": "877",
+      "id": 5
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "bill": [
+    {
+      "fullname": "VICKY VINCENT",
+      "email": "wilsan@gmail.com",
+      "address": "1B , SANTOSHPURAM",
+      "city": "CHENNAI",
+      "state": "TAMILNADU",
+      "zip": "600073",
+      "nameoncard": "john",
+      "creditcardno": "111111",
+      "expmonth": "sep",
+      "expyear": "2018",
+      "cvv": "344",
+      "id": 1
+    },
+    {
+      "fullname": "rajasekar b",
+      "email": "rajasekar@gmail.com",
+      "address": "papanasam",
+      "city": "Thanjavur",
+      "state": "Tamil Nadu",
+      "zip": "614207",
+      "nameoncard": "raja",
+      "creditcardno": "222-333-444",
+      "expmonth": "august",
+      "expyear": "2022",
+      "cvv": "866",
+      "id": 2
+    },
+    {
+      "fullname": "dollar",
+      "email": "dollar@gmail.com",
+      "address": "542.w street",
+      "city": "chennai",
+      "state": "TN",
+      "zip": "60001",
+      "nameoncard": "dollar",
+      "creditcardno": "222-333-555",
+      "expmonth": "june",
+      "expyear": "1996",
+      "cvv": "999",
+      "id": 3
+    }
+  ],
+  "cashondelivery": [
+    {
+      "fullname": "VINCENT",
+      "email": "wilsan@gmail.com",
+      "address": "1B , SANTOSHPURAM",
+      "city": "CHENNAI",
+      "state": "TAMILNADU",
+      "zip": "600073",
+      "id": 1
+    },
+    {
+      "fullname": "babu",
+      "email": "babu@gmail.com",
+      "address": "1B , SANTOSHPURAM",
+      "city": "CHENNAI",
+      "state": "TAMILNADU",
+      "zip": "600073",
+      "id": 2
+    },
+    {
+      "fullname": "rajasekar b",
+      "email": "raja@gmail.com",
+      "address": "papanasam",
+      "city": "Thanjavur",
+      "state": "Tamil Nadu",
+      "zip": "614207",
+      "id": 3
+    },
+    {
+      "fullname": "madhi",
+      "email": "madhi@gmail.com",
+      "address": "1st,street",
+      "city": "trichy",
+      "state": "tn",
+      "zip": "60007",
+      "id": 4
+    },
+    {
+      "fullname": "viyani",
+      "email": "viyani@gmail.com",
+      "address": "2nd street",
+      "city": "tnj",
+      "state": "TN",
+      "zip": "60043",
+      "id": 5
+    }
+  ]
 }
